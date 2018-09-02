@@ -81,3 +81,12 @@ NoneType的值 类似于 null值
 	False
 	```
 2. 对象身份比较
+	
+作为对**值**比较的补充，python也支持**对象本身**的比较。
+
+标准类型对象身份比较操作符：（返回值布尔类型）
+
+	```python
+	obj1 is obj2     #obj1 和 obj2是同一个对象
+	obj1 is not obj2 #obj1 和 obj2不是同一个对象
+	```
