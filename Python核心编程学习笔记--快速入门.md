@@ -15,12 +15,26 @@
 	'hello world!'
 	```
 
-- print语句与字符串格式操作符（%）结合
+- print语句与字符串格式操作符（%）结合：
+	%s是字符串
+	%d是有符号十进制整数，%06d表示输出的整数显示6位数，不足的地方使用0补全，超过6位则显示原数。
+	%f浮点数，%.06f表示小数点后只显示6位
+	%%输出%
+	格式：
+	print("格式化字符串" % 变量1)
+	print("格式化字符串" % (变量1, 变量2, ...))
 	
 	``` python
 	>>> print "%s is String, %d is int, %f is float" % ("abc", 1, 1.0)
 	abc is String, 1 is int, 1.000000 is float
+	>>> print("%16d" % (2))
+               2
+	>>> print("%016d" % (2))
+	0000000000000002
+	>>> print("%.06f" % (2.1))
+	2.100000
 	```
+
 
 - 重定向输出到文件，符号 >>
 	
@@ -28,12 +42,12 @@
 	>>> print >> filename, 'string'
 	```
 
-## 2. 输入语句 raw_input()
+## 2. 输入语句 input()
 
-- 内建函数raw_input()读取标准输入，数据赋值给指定变量。
+- 内建函数input()读取标准输入，数据赋值给指定变量。
 
 	``` python
-	>>> user = raw_input('Enter your name: ')
+	>>> user = input('Enter your name: ')
 	Enter your name: chensiwen
 	>>> print 'Your name is: ', user
 	Your name is:  chensiwen
@@ -42,7 +56,7 @@
 - 内建函数int()将字符串转成整型值。
 
 	``` python
-	>>> num = raw_input('Enter a number: ')
+	>>> num = input('Enter a number: ')
 	Enter a number: 1000
 	>>> print 'Your number is %d' % (int(num))
 	Your number is 1000
@@ -52,9 +66,18 @@
 	Double your number is  2000
 	```
 
+- float()将字符串转成浮点型。
+
+	```python
+	>>> float('12.3')
+	12.3
+	>>> type(float('12.3'))
+	<class 'float'>
+	```
+
 ## 3. 帮组函数 help(函数名称)
 
-```
+	```python
 	>>> help(raw_input) #以raw_input()函数为例
 	Help on built-in function raw_input in module __builtin__:
 	
@@ -65,7 +88,7 @@
 	    If the user hits EOF (Unix: Ctl-D, Windows: Ctl-Z+Return), raise EOFError.
 	    On Unix, GNU readline is used if enabled.  The prompt string, if given,
 	    is printed without a trailing newline before reading.
-```
+	```
 
 ## 4. 注释
 
@@ -195,6 +218,20 @@ Python有五个标准的数据类型：
 3. List（列表）
 4. Tuple（元组）
 5. Dictionary（字典）
+
+使用type()函数可以查看变量的类型
+
+	```python
+	>>> age=18
+	>>> type(age)
+	<class 'int'>
+	>>> name = 'chensiwen'
+	>>> type(name)
+	<class 'str'>
+	>>> aDict={'Key':'Value'}
+	>>> type(aDict)
+	<class 'dict'>
+	```
 
 ### 1) Numbers 数字
 	
