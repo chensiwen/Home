@@ -16,13 +16,13 @@
 	```
 
 - print语句与字符串格式操作符（%）结合：
-	%s是字符串
-	%d是有符号十进制整数，%06d表示输出的整数显示6位数，不足的地方使用0补全，超过6位则显示原数。
-	%f浮点数，%.06f表示小数点后只显示6位
-	%%输出%
-	格式：
-	print("格式化字符串" % 变量1)
-	print("格式化字符串" % (变量1, 变量2, ...))
+	1) %s是字符串
+	2) %d是有符号十进制整数，%06d表示输出的整数显示6位数，不足的地方使用0补全，超过6位则显示原数。
+	3) %f浮点数，%.06f表示小数点后只显示6位
+	4) %%输出%
+	5) 格式：
+	- print("格式化字符串" % 变量1)
+	- print("格式化字符串" % (变量1, 变量2, ...))
 	
 	``` python
 	>>> print "%s is String, %d is int, %f is float" % ("abc", 1, 1.0)
@@ -80,7 +80,6 @@
 	```python
 	>>> help(raw_input) #以raw_input()函数为例
 	Help on built-in function raw_input in module __builtin__:
-	
 	raw_input(...)
 	    raw_input([prompt]) -> string
 	    
