@@ -119,6 +119,14 @@
 
 	- 逻辑操作符可以将任意表达式连接在一起，并得到布尔值。
 	- `A < B < C` 等价与 `A < B and B < C` 
+	
+4. `*`用于字符串
+
+	```python
+	>>> 'abc ' * 10
+        'abc abc abc abc abc abc abc abc abc abc '
+	```
+
 
 ## 6. 赋值
 
