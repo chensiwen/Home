@@ -21,8 +21,8 @@
 	3) %f浮点数，%.06f表示小数点后只显示6位
 	4) %%输出%
 	5) 格式：
-	- print("格式化字符串" % 变量1)
-	- print("格式化字符串" % (变量1, 变量2, ...))
+		- print("格式化字符串" % 变量1)
+		- print("格式化字符串" % (变量1, 变量2, ...))
 	
 	``` python
 	>>> print "%s is String, %d is int, %f is float" % ("abc", 1, 1.0)
@@ -77,7 +77,7 @@
 
 ## 3. 帮组函数 help(函数名称)
 
-	```python
+```python
 	>>> help(raw_input) #以raw_input()函数为例
 	Help on built-in function raw_input in module __builtin__:
 	raw_input(...)
@@ -87,7 +87,7 @@
 	    If the user hits EOF (Unix: Ctl-D, Windows: Ctl-Z+Return), raise EOFError.
 	    On Unix, GNU readline is used if enabled.  The prompt string, if given,
 	    is printed without a trailing newline before reading.
-	```
+```
 
 ## 4. 注释
 
@@ -220,7 +220,7 @@ Python有五个标准的数据类型：
 
 使用type()函数可以查看变量的类型
 
-	```python
+```python
 	>>> age=18
 	>>> type(age)
 	<class 'int'>
@@ -230,7 +230,7 @@ Python有五个标准的数据类型：
 	>>> aDict={'Key':'Value'}
 	>>> type(aDict)
 	<class 'dict'>
-	```
+```
 
 ### 1) Numbers 数字
 	
