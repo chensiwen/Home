@@ -334,17 +334,17 @@ Python有五个标准的数据类型：
 		else_suite
 	```
 	
-2.1 if嵌套
-```python
-if expression1:
-    if_suite
-    if expression2:
-        if_suite
-    else:
-	else_suite
-else:
-    else_suite
-```
+ 2.1 if嵌套
+ ```python
+ if expression1:
+     if_suite
+     if expression2:
+         if_suite
+     else:
+	 else_suite
+ else:
+     else_suite
+ ```
 
 
 3. while循环语句
