@@ -1,2 +1,2 @@
 # Home
-用于练习Git
+用于练习Python
