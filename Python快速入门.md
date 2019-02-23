@@ -1,5 +1,11 @@
 # 快速入门
 
+### 交互式编程不需要创建脚本文件，是通过 Python 解释器的交互模式进来编写代码。
+
+
+1. 在命令行中输入Python即可启动交互式编程![](https://i.imgur.com/XjX9ZyX.png)
+2. Windows在安装Python时已经已经安装了默认的交互式编程客户端![](https://i.imgur.com/uSRLqWV.png)
+
 ## 1. 输出语句print
 
 - 在交互式解释器中，可以用print语句输出，也可以使用变量名查看变量的值。
