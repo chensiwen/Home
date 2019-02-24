@@ -163,6 +163,7 @@
 	>>> 'abc ' * 10
         'abc abc abc abc abc abc abc abc abc abc '
 	```
+	
 5. 转义字符
 
   - `\t`在控制台输出**制表符**， 使得输出文本在**垂直方向**保持对齐
