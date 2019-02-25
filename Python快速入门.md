@@ -231,7 +231,7 @@
 	- 剩下的字符可以是由**字母、数字、下划线**组成
 	- **区分大小写**
 	
-2. Python保留字符，不能用作常数或变数，或任何其他标识符名称。所有 Python 的关键字只包含小写字母。关键字32个
+2. Python保留字符，不能用作常数或变数，或任何其他标识符名称。所有 Python 的关键字只包含小写字母。关键字33个
 
 	***and, as, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, with, yield, None***
 
@@ -576,3 +576,28 @@ def function(parameters):
   - 多行语句：使用**斜杠(\\)**将多行语句连接成一条Python语句。语句中包含 **[]**, **{}** 或 **()** 括号就不需要使用多行连接符(\\)。
 
 2.PyCharm添加函数参数说明的方式：选中函数名，点击💡，选择"Add parameters to docstring"。
+
+## 15.关键字、函数和方法的区别 ##
+
+1、关键字（python 3.7 已有35个）
+```python
+>>> import keyword
+>>> print(keyword.kwlist)
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+>>> print(len(keyword.kwlist))
+35
+```
+
+2、函数
+
+  封装了独立的功能，可以直接调用：
+  
+  ## 函数名(参数) ##
+  
+  例如：print函数、input函数、len函数等，不需要对象调用。
+  
+3、方法
+
+  需要对象调用，针对对象要做的操作。
+  
+  ## 对象.方法名(参数)##
