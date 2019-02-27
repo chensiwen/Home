@@ -343,8 +343,6 @@ list_name[index]  #取数据，数字索引index从`0`开始
     - 元组转换成列表: list(tuple_name)
     - 列表转换成元组：tuple(list_name)
 
-5. 切片运算得到子集 `[]`,`[:]`。
-
 ### 4）Dictionary 字典
 	
 1. 字典是Python中的映射数据类型，由键值对（key-value）构成;
@@ -364,6 +362,11 @@ list_name[index]  #取数据，数字索引index从`0`开始
 	```
   5. 字典是无序的
   
+  ### 5）切片
+  
+  1、支持的数据类型：字符串、列表、元组
+  2、格式：[开始索引:结束索引:步长] 
+  3、左闭右开
   
 ## 9. 代码组 ##
 
@@ -469,6 +472,18 @@ list_name[index]  #取数据，数字索引index从`0`开始
 		
 	0 1 2 3 4 5 6 7 8 9
 	```
+	
+ - 完整的for循环语句
+ 
+ ```python
+ for 变量 in 集合：
+     循环体代码
+     (break)
+ else:
+     只有在for循环全部执行完毕后，才会执行该部分代码；若是for循环中使用break推出循环，该部分代码将不会执行。
+ ```
+ 
+ ## 一般用于判断某个字典中是否存在指定的值 ##
 
 ## 11. 继续 \ ##
 
@@ -588,7 +603,7 @@ list_name[index]  #取数据，数字索引index从`0`开始
 
 ## 14.函数 ##
 
-1.函数格式
+1. 函数格式
 
 ```python
 def function(parameters):
@@ -602,7 +617,8 @@ def function(parameters):
 
   - 多行语句：使用**斜杠(\\)**将多行语句连接成一条Python语句。语句中包含 **[]**, **{}** 或 **()** 括号就不需要使用多行连接符(\\)。
 
-2.PyCharm添加函数参数说明的方式：选中函数名，点击💡，选择"Add parameters to docstring"。
+2. PyCharm添加函数参数说明的方式：选中函数名，点击💡，选择"Add parameters to docstring"。
+
 
 ## 15.关键字、函数和方法的区别 ##
 
